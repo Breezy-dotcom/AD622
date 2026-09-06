@@ -195,3 +195,126 @@ FROM таблица1 [INNER] JOIN таблица2 ON условие1
 SELECT столбецы
 FROM таблица1 LEFT [RIGHT] JOIN таблица2 ON условие1
 		[LEFT [RIGHT] JOIN таблица3 ON условие2]
+		
+		
+Система контроля версий (Version Control Systems, VCS) — это система, сохраняющая изменения в одном или нескольких файлах так, чтобы потом можно было восстановить определённые старые версии.
+
+Git является распределенной (distributed) системой контроля версий.
+
+GitHub
+
+git --version
+git --help
+
+
+git init
+- создание git репозитория
+
+git status
+- просмотр состояния репозитория
+
+tracked - файлы под версионным контролем (отслеживаемые)
+untracked - файлы не под версионным контролем (не отслеживаемые)
+
+git add -A
+		--all
+		main.py
+		.
+- добавляет файлы под версионный контроль
+		
+
+git config --global user.name "newUser"
+		   --local
+	Для проверки:
+	git config --global user.name
+	
+git config --global user.email "test@mail.ru"
+	
+	Для проверки:
+	git config --global user.email
+	
+
+git commit -m "first commit"
+- создает коммит (контрольная точка) с названием
+
+
+.gitignore
+
+text_for_gitignore.txt
+
+
+Ветки
+git branch
+- просмотр веток
+
+git branch test
+- создать ветку
+
+git branch -D test
+- удаление ветки
+
+
+git branch readme
+
+
+git checkout readme
+- перейти на ветку
+
+git checkout -b new
+- при переходе на ветку, она создастся автоматически
+
+
+git branch -D new
+
+readme.md
+
+git commit -m "created file readme.md"
+
+
+master     ->      readme
+main.py            main.py
+readme.md   <-	   readme.md
+				   
+git merge readme
+- слияние веток
+
+git branch -D readme
+
+git log
+- история коммитов
+
+
+q
+
+Settings -> Developer Settings -> Personal access tokens ->
+Nokens (classic) -> Generate new token (classic)
+
+
+токен
+
+Win + R => control
+
+Диспечер учетных данных
+
+
+https://github.com
+Helen-prog
+токен
+
+
+https://github.com/Helen-prog/AD622.git
+git push -u origin master
+
+
+810da858a1ce1adfef6c32596662ed821e7ba
+
+
+0) git status
+1) git add .
+2) git commit -m "change"
+3) git push
+	- переносим данные с локального репозитория на удаленный репозиторий
+	
+https://github.com/Helen-prog/AD622/blob/master/main.py
+
+
