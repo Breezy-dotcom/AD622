@@ -2972,4 +2972,6 @@
 #         sql = f.read()
 #         cur.executescript(sql)
 
-print("Изменения после коммита")
+# print("Изменения после коммита")
+
+print("Hello World")
